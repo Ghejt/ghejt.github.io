@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Number Guessing</title>
+	</head>
+	<body>
+		<script type = text/javascript>
+			function getRandomInt(min, max){
+ 			min = Math.ceil(min);
+  			max = Math.floor(max);
+  			return Math.floor(Math.random() * (max - min) + min); 
+			};
+			var number = getRandomInt(0, 11);
+    		var guess = prompt("Guess a number between 1 and 10.", "");
+       		var guessNumber = 0;
+       		while(guess != number){
+        		alert("You guessed " + guess + ": The correct number was " + number + ". Please guess again");
+          		guessNumber += 1;
+          		number = getRandomInt(1,10);
+          		guess = prompt("Guess a number between 1 and 10.", "");
+        	}
+        	guessNumber += 1;
+        	alert("You guessed " + guess + ": You were correct! It took you " + guessNumber + " guesses.");
+		</script>
+	</body>
+</html>
