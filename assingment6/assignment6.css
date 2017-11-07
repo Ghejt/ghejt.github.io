@@ -1,0 +1,40 @@
+.center {
+    text-align: center;
+}
+
+@font-face {
+    font-family: "arvo";
+    src: url('Arvo-Regular.ttf');
+}
+
+body {
+    font: 14px/20px arvo;
+    color: #555;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Times New Roman", times, serif;
+    border-style: inset;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 15px;
+    background-color: #c2c2a3;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+}
+
+}
+
+body {
+    background-image: url("cork-wallet.png");
+    background-size: cover;
+}
